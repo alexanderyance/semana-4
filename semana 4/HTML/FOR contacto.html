@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header><img src="../IMG/incap.jpeg" alt="">
+    <h1>formularios y listas en HTML</h1>
+    </header>
+    </nav>
+        <ul>
+            <li>HOME</li>
+            <li>PRODUCTOS</li>
+            <li>SERVICIO</li>
+            <li >CONTACTO</li>
+        </ul>
+</nav>
+<section>
+    <form action="datos.php" method="post">
+    <fieldset>
+    <!--NOMBRE COMPLETO-->
+    <label>NOMBRE COMPLETO</label>
+    <input name="NOMBRE" type="text" placeholder="ingrese su NOMBRE completo" required="">
+    <br><br>
+
+    <!--seleccione email-->
+    <label>E-mail</label>
+    <input name="email" type="email" placeholder="ingrese su email" required="">
+    <br><br>
+
+    <!--seleccione contraseña-->
+<label>contraseña</label>
+<input name="contraseña" type="password" placeholder="ingrese su contraseña" required="">
+<br><br> 
+<hr>
+    <!--seleccion hobbies-->
+    <label>selecciona tus hobbies
+    </label>
+    <br>
+    <input name="cine">
+    <input name="lectura">
+    <input name="deporte">
+<br>
+    <!-- estado civil -->
+
+<label>estado civil</label><br>
+       <input name="estcivil" type="radio" value="casado">casado(a)<br>
+       <input name="estcivil" type="radio" value="soltero">soltero(a)<br>
+       <input name="estcivil" type="radio" value="viudo">viudo(a)<br>
+    <br>
+    <br>
+
+    <!-- seleccionar opcion lista  -->
+    <label>PROGRAMAS TECNICOS</label>
+    <select name="select">
+        <option>seleccione programa</option>
+        <option>SISTEMAS</option>
+        <option>DISEÑO GRAFICO</option>
+        <option>CONTABILIDAD</option>
+    </select>
+    <br>
+    <br>
+    <label>tu comentario</label><br>
+        <textarea name="mensaje" rows="5" cols="40"></textarea>
+</fieldset>
+<br><br>
+    <!-- seccion de botones formulario submit : enviar datos cancel : borrados 
+ingresados -->
+    <button type="submit">enviar</button>
+    <button type="reset">cancelar</button>
+    <br>
+    <br>
+    </form>
+</section>
+        <!-- seccion de pie de pagina -->
+    <footer>
+        Derechos reservados &copy;2022&#64;NOMBRE STD
+    </footer>
+
+</body>
+</html>
